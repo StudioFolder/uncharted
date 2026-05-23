@@ -20,3 +20,6 @@ images/*.zip
 .cache/
 node_modules/
 .vercel/
+
+# Internal docs — kept locally, not shared in the public repo
+_docs/

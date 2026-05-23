@@ -22,3 +22,6 @@ images/texture/hd/
 # Local scratch
 *.log
 .cache/
+
+# Internal docs — kept locally, never deployed
+_docs/
