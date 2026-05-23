@@ -45,20 +45,23 @@ No content, copy, layout, or behaviour was changed.
 
 ## Known follow-ups
 
-1. **Vendor `three.js` r63 and `OrbitControls` locally.**
-   `index.html` still loads three.js from `cdnjs.cloudflare.com` and
-   OrbitControls from `s3-us-west-2.amazonaws.com/s.cdpn.io/123941/`
-   (a CodePen mirror). cdnjs is reliable; the CodePen mirror is not.
-   Copy both files into `js/vendor/` and switch the script tags to
-   relative paths.
-2. **Mobile / responsive pass.** The site is desktop-first; the
+1. **Mobile / responsive pass.** The site is desktop-first; the
    description paragraph is hidden on mobile via `.noMobile`, and the
    navigation collapses but the layout below doesn't degrade well.
-3. **Modernize the stack.** Three.js r63 (2014) is ancient. A v0.150+
-   port would let us drop the `OrbitControls` mirror and use the
-   official ES module. Foundation 6 + jQuery + Stellar could be replaced
-   with a tiny custom CSS grid + vanilla JS scroll.
-4. **Performance / SEO / accessibility.** Image optimization (the 45
-   year textures are ~40 MB of JPEG, hd/ adds another 23 MB), proper
-   `alt` text, full Open Graph + Twitter card meta, `lang` correctness,
-   sitemap, robots.txt.
+2. **Modernize the stack.** Three.js r63 (2014) is ancient. A v0.170+
+   port would let us use the official ES module of OrbitControls and
+   drop the legacy `THREE.ImageUtils.loadTexture` / build patterns.
+   Foundation 6 + jQuery + Stellar could be replaced with a tiny custom
+   CSS grid + vanilla JS scroll.
+3. **Broken-link audit.** Many of the 2016-era credit links in
+   `explore.html` (personal sites, Tumblr URLs) likely lapsed. Sweep
+   through and update or remove.
+
+## Vendored libraries
+
+`js/vendor/three.min.js` and `js/vendor/OrbitControls.js` are pinned to
+three.js r63 (2014), taken from the official
+[mrdoob/three.js](https://github.com/mrdoob/three.js/tree/r63) tag. They
+were previously loaded from external CDNs; vendoring them removes a
+runtime dependency on third-party hosts. When/if we upgrade three.js,
+both files get replaced together.
