@@ -1,0 +1,826 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta property="og:image" content="https://uncharted.ooo/images/explore/svalbardfb.jpg" />
+    <title>Uncharted</title>
+    <meta property="og:title" content="Uncharted" />
+    <meta property="og:url" content="https://uncharted.ooo" />
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link href="css/nouislider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vesper+Libre:400,900" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+
+
+    <div id="big-image-top" data-magellan-target="big-image-top" data-stellar-background-ratio="0.8" class="big-image-container no-padding">
+      <h1 class="big-text"  onclick="window.location.href='index.html'" >Uncharted</h1>
+    </div>
+
+    <div id="big-image-compenser" class="noMobile"></div>
+
+    <header class="nav_bar ">
+
+
+
+
+
+      <div id="responsive-menu">
+
+      <div class="top-bar-left">
+          <ul class="dropdown menu" data-magellan>
+          <li><a href="#big-image-top"><img id="logonav" src="images/explore/logo.svg"></a></li>
+          </ul>
+      </div>
+        <div class="top-bar-right noMobile">
+          <ul class="dropdown menu " data-magellan>
+            <!-- <li><a class="cool" href="#research">Research</a></li> -->
+            <li><a class="cool" href="#sensing">1&mdash;Sensing</a></li>
+            <li><a class="cool" href="#processing">2&mdash;Processing</a></li>
+            <li><a class="cool" href="#rendering">3&mdash;Rendering</a></li>
+            <li><a class="cool" href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right noDesktop">
+
+         <a id="menu">Menu</a>
+
+          <ul id="menuMobile" class="f-dropdown dropdown menu" data-dropdown-content data-magellan aria-hidden="true" tabindex="-1" style="display: none;">
+            <!-- <li><a class="cool" href="#research">Research</a></li> -->
+            <li><a class="amobile" href="#sensing">1&mdash;Sensing</a></li>
+            <li><a class="amobile" href="#processing">2&mdash;Processing</a></li>
+            <li><a class="amobile" href="#rendering">3&mdash;Rendering</a></li>
+            <li><a class="amobile" href="#contacts">Contacts</a></li>
+          </ul>
+
+
+
+        </div>
+      </div>
+
+    
+
+</header>
+       
+
+
+
+    <div class="row">
+
+      <div class="spacer"></div>
+      <div class="large-12  medium-12 columns">
+
+        <p class="explore-text medium" > 
+
+
+        By looking at imagery metadata, interviews, meeting minutes of space treaties, and technological failures, 
+        <span class="bold">Uncharted </span> is an ongoing research inquiry into the rhetoric of the contemporary globe—and by what mechanisms it came to be.
+
+
+
+
+        </p>
+
+        <div class="spacer"></div>
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+ 
+      <div id="research" data-magellan-target="research" data class="large-10 large-offset-1 medium-12 columns">
+
+        <p class="explore-text">Cartographic representation and geographic databases are used every day by millions of people to move across familiar environments, plan long-range trips, cross national borders, reach shores of unknown countries in hope of a better life, or scan oceanic seabeds for untapped resources. Once directly connected to a physical activity on the territory—often accomplished through a coordinated parade of military and state presence—, Earth surveying is now the result of the remote observation by a vast array of orbiting sensors.
+        </p>
+        <p class="explore-text">
+
+
+        Disconnected from the fate of our surroundings (and bound to an almost-eternal life out of the harsh conditions that constantly reshape the same ground they monitor), the global remote sensing apparatus is made of objects, facilities, and data owned by nation states and private corporations, and managed through an intricate network of ground stations. It conceals its different agendas under the smooth, colour-corrected surface of satellite imagery, embedded in the metadata of the global digital mosaic like a footnote to the wonders of the contemporary geographic omniscience—while delivering a profitable picture of a borderless world. On the screen where the geographic information is delivered and experienced, all that counts is a smooth navigation experience: we can go everywhere—and we belong anywhere—on the evenly accessible surface criss-crossed by GPS-calculated paths, where political and natural features are erased under the uniform roaming of a positioning dot.
+        </p>
+        <p class="explore-text">
+
+
+        Uncharted aims to map this secretive territory, in order to unfold the complexity behind the technologies and systems that are shaping the way in which we see and experience our world. The first outcome of this investigation is an interactive installation and a series of experimental visualisations produced for After Belonging, Oslo Architecture Triennale 2016. The infrastructure behind contemporary cartography has been enquired in three phases and correspondent case studies: <a class="" href="#sensing">Sensing</a>, by visualising Landsat programme’s operations between 1972 and 2016; <a class="" href="#processing">Processing</a>, by looking at Svalbard Satellite Station and various features of satellite imagery at extreme latitudes; <a class="" href="#rendering">Rendering</a>, by cutting a vertical section of Google Maps’ digital sky. The making-of and the design of this installation are presented here.
+
+        </p>
+
+      </div>
+    </div>
+
+<div id="touchMap">
+    <div class="row">
+
+
+      <div class="spacer" id="sensing" data-magellan-target="sensing" ></div>
+      <div class="small-12 columns ">
+        <div id="slider-step"></div>
+      </div>
+    </div>
+
+    <embed id="slider-step-image"  src="images/texture/drawn_1972.jpg" />
+
+    <div id="hand-holder"><img id="handimg" src="images/hand.svg" /></div>
+
+</div>
+  <div class="row">
+    <div class="large-10 large-offset-1 columns">
+      <p class="explore-text excerpt">Landsat global imagery coverage, 1972-2016 (data source: <a target="_blank" href="http://landsat.usgs.gov/USGSLandsatGlobalArchive.php">USGS</a>)</p>
+    </div>
+    <div class="spacer"></div>
+  </div>
+
+
+
+    <div class="row">
+      <div class="large-10 large-offset-1 medium-12 columns">
+        <div class="spacer" ></div>
+
+        <h3  class="explore-text subtitle">Sensing</h3>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+    
+      <div data class="large-10 large-offset-1 medium-12 columns">
+
+        <p class="explore-text">Since 1972, at least one Landsat spacecraft has been continuously circling between 900 and 700 km above the Earth’s surface. As the longest-running programme for remote sensing, Landsat products are still used as a benchmark to evaluate the accuracy of current geospatial imagery. The Landsat programme posed very early questions about real-time processing of vast amount of information and tackled issues about data sovereignty, such as the <a target="_blank" href="http://www.spacelaw.olemiss.edu/resources/pdfs/unprincip.pdf">debate</a> on the rights of sensing countries over sensed countries, leading to the ratification of UN space treaties in the late 1970s and 1980s.
+
+        </p>
+        <p class="explore-text">
+
+
+        The single global image of the Earth produced by Landsat is far from an unfaltering panorama of the planet: in fact, it is a mosaic of more than  60,000 images. The sensed areas vary hugely from year to year, according to a variety of reasons: needs for cartographic consolidation, weather  conditions, environmental emergencies, technological compromises, military surveillance, political agenda, availability of ground receiving  stations. 
+  
+        </p>
+        <p class="explore-text">
+  
+        “A Panoptic Cartography of Remote Sensing” displays the amount and distribution of all the imagery collected by the Landsat programme between 1972  and 2016. A metal frame supporting a set of 45 globes in constant motion provides a comparative tool for the exploration of the data. Each globe represents the imagery available for every single year, through a visualisation of the satellite metadata along the actual Landsat orbital path.  Only by looking at this series over time is it possible to observe the evolution and fragmentation of the current global mosaic, as an evidence of the biased interests (and the evolving capabilities) that determined the advance of remote sensing over the past decades.
+  
+        </p>
+
+         <div class="spacer"></div>
+
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="medium-6 small-12 columns">
+      <img src="images/explore/Uncharted_Balsamini_StudioFolder_08.jpg">
+      <div class="spacer noDesktop"></div>
+        
+      
+      </div>
+      <div class="medium-6 small-12 columns">
+        
+        <img src="images/explore/Uncharted_Balsamini_StudioFolder_15.jpg">
+      
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-10 large-offset-1 columns">
+         <p class="explore-text excerpt">Each globe is casted inside a rubber mold and polished by hand (photo: <a target="_blank" href="http://www.mattiabalsamini.com/">Mattia Balsamini</a>)</p>
+      </div>
+    </div>
+
+
+    <div class="spacer"></div>
+
+       <div class="row">
+ 
+
+      <div  class="large-12 columns no-padding"   >
+        
+        <img alt="" src="images/explore/Uncharted_Balsamini_StudioFolder_22.jpg">
+
+      </div>
+    </div>
+
+   <div class="row">
+      <div class="spacer_small"></div>
+      <div  class="large-12 columns no-padding "   >
+        
+        <img alt="" src="images/explore/Uncharted_Balsamini_StudioFolder_23.jpg">
+
+      </div>
+    </div>
+      <div class="row">
+      <div class="large-10 large-offset-1 columns">
+         <p class="explore-text excerpt">A drawing machine translates the Landsat metadata into a visualisation of the global yearly distribution of satellite imagery (photo: <a target="_blank" href="http://www.mattiabalsamini.com/">Mattia Balsamini</a>)</p>
+      </div>
+ 
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="row">
+
+      <div class="medium-6 small-12 columns ">
+        <img src="images/explore/aligned_0070_DSC_0729.jpg">
+        <div class="spacer noDesktop"></div>
+
+      </div>
+      <div class="medium-6 small-12 columns ">
+        <img src="images/explore/aligned_0089_DSC_0748.jpg">
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="large-10 large-offset-1 columns">
+         <p class="explore-text excerpt">Each globe reveals the most sensed areas and the blank spots for every year of Landsat activity. The varying focus of the satellite eye can be related to historical events, technological evolution, or international agreements over the use of the collected data
+        </p>
+      </div>
+    </div>
+    <div class="spacer"></div>
+
+
+    <div class="row">
+    
+      <div data class="large-10 large-offset-1 medium-12 columns">
+
+        <p class="explore-text">
+
+        All the publicly available Landsat datasets have been downloaded and parsed in order to produce a geographical representation of the imagery  distribution over time, and translated into a series of maps. A drawing machine has been used to engrave the data onto the globes, which had been  previously crafted by hand through a custom process of casting and polishing. The lines’ thickness—which represent the number of photos available   for a given year—is originated by the increasing vibration of the robot’s arm, that hovers on the spinning globe while progressively drawing on it.   A separate table provide a key for the understanding of the data and allows to get a printout of selected quotes and references that were collected   during the research.
+        
+        </p>
+
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+       <div class="row">
+ 
+
+      <div id="doga-installation" class="large-12 columns no-padding"   >
+        
+        <img alt="Installation at DOGA" src="images/explore/Uncharted_After-Belonging_StudioFolder_01.jpg">
+
+      </div>
+     </div>
+
+
+    <div class="spacer_small"></div>
+
+       <div class="row">
+ 
+
+      <div id="doga-installation" class="large-12 columns no-padding"   >
+        
+        <img alt="Installation at DOGA" src="images/explore/Uncharted_After-Belonging_StudioFolder_04.jpg">
+
+      </div>
+    </div>
+
+
+      <div class="spacer_small"></div>
+
+       <div class="row">
+ 
+
+      <div id="doga-installation" class="large-12 columns no-padding"   >
+        
+        <img alt="Installation at DOGA" src="images/explore/Uncharted_After-Belonging_StudioFolder_13.jpg">
+
+      </div>
+    </div>
+
+
+
+    <div class="spacer_small"></div>
+
+       <div class="row">
+ 
+
+      <div id="doga-installation" class="large-12 columns no-padding" >
+        
+        <img alt="Installation at DOGA" src="images/explore/After-Belonging_Uncharted_OAT-11.jpg">
+
+      </div>
+      
+      </div>
+      <div class="row">
+      <div class="large-10 large-offset-1 columns">
+         <p class="explore-text excerpt">Views of the Uncharted installation as part of After Belonging, Oslo Architecture Triennale 2016 (September 8th–November 27th, 2016)</p>
+      </div>
+      
+    </div>
+
+
+
+
+
+
+    <div class="row">
+      <div class="large-10 large-offset-1 medium-12 columns">
+        <div class="spacer" id="processing" data-magellan-target="processing" ></div>
+
+        <h3  class="explore-text subtitle">Processing</h3>
+
+      </div>
+    </div>
+
+    <div class="row">
+    
+      <div  data class="large-10 large-offset-1 medium-12 columns">
+
+        <p class="explore-text">Svalbard is an archipelago situated between 74°N and 81°N in the Arctic Ocean. The Svalbard Treaty of 1920 recognises the full Norwegian sovereignty over the islands, but it guarantees equal access to their territory and resources to all the signatory nations. It also forbids any military operation on its land and waters. Mostly inhabited by mining workers from Russian and Norwegian origins during the XX century, Svalbard now hosts numerous advanced research outposts from a wide range of different nationalities. It’s both a global research centre for the study of climate change and the upper atmosphere, and an emerging centrepiece of the new power race for influence and resources in the High Arctic.
+        </p>
+      </div>
+    </div>
+  <div class="spacer"></div>
+
+    <div class="row">
+
+      <div class="medium-6 small-12 columns ">
+        <img src="images/explore/Svalbard 01.jpg">
+        <div class="spacer noDesktop"></div>
+
+      </div>
+      <div class="medium-6 small-12 columns ">
+        <img src="images/explore/Svalbard 04.jpg">
+      </div>
+
+    </div>
+
+
+
+      </div>
+      <div class="row">
+      <div class="large-10 large-offset-1 columns">
+         <p class="explore-text excerpt">Samples from the Svalbard archipelago’s mosaic (source: <a target="_blank" href="https://www.google.it/maps/@78.2443332,15.3314935,10660m/data=!3m1!1e3">Google</a>)</p>
+      </div>
+
+    </div>
+    
+    <div class="spacer"></div>
+
+
+
+
+    <div class="row">
+    
+      <div  data class="large-10 large-offset-1 medium-12 columns">
+
+
+
+        <p class="explore-text">
+
+        The ground station run by <a href="http://www.ksat.no/" target="_blank" >KSAT</a>  is the world’s most important satellite control centre. Svalsat sits both at the centre and at the edge of the modern cartographic space: on one side, its latitude ensures the most optimal location to intercept polar-orbiting satellites; on the other, polar caps are very difficult to sense—it can take up to five years to have a fully updated mosaic of a region that would be otherwise covered by 10 Landsat scenes. The Svalbard archipelago offers a unique opportunity to investigate the production chain of the global geographic knowledge: by looking at it through a catalogue of the anomalies, fractures, and aberrations of the satellite imagery mosaic, one can read beyond the apparent smoothness of the charted globe.
+
+      
+        </p>
+
+      </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+      <div class="large-12 columns "   >
+        <img alt="" src="images/explore/Uncharted_After-Belonging_StudioFolder_lightbox.jpg">
+      </div>
+
+
+      </div>
+      <div class="row">
+      <div class="large-10 large-offset-1 columns">
+         <p class="explore-text excerpt">At the edge of the mosaic: a catalogue of anomalies, fractures, and aberrations. Detail view of the Uncharted installation as part of After Belonging, Oslo Architecture Triennale 2016 (September 8th–November 27th, 2016)</p>
+      </div>
+     
+    </div>
+
+  <div class="spacer"></div>
+
+
+
+    <div class="row">
+      <div class="large-10 large-offset-1 medium-12 columns">
+        <div class="spacer" id="rendering" data-magellan-target="rendering"></div>
+
+        <h3   class="explore-text subtitle">Rendering</h3>
+
+      </div>
+    </div>
+
+
+   <div class="row">
+    
+      <div data class="large-10 large-offset-1 medium-12 columns">
+
+        <p class="explore-text">
+          The contemporary atlas is a cloudless mosaic composed by imagery from a variety of sources—an asynchronous composition of erratic resolutions, where the sharpness of most-populated areas decay into the algorithmically interpolated gloom of coastlines and seabeds. By zooming across the evenly-lit sky of mapping services like Google Maps, Bing, or Apple Maps, this intricate layering emerges: if visualised, it can offer a glimpse into the structure and rules of the global remote sensing apparatus. 
+
+        </p>
+        <p class="explore-text">
+          Three models were assembled as a vertical section through the sky above three sample locations: the territory of Svalbard, where satellite scans are scarce and bordering tiles stretch over long periods of time; the contested border between Morocco and Western Sahara, a scarcely-populated region difficult to sense due to the absence of evident natural features; the San Francisco Bay Area—one of the best mapped portions of the planet, and a usual testbed for commercial mapping services.
+
+        </p>
+
+    </div>
+  </div>
+
+
+  <div class="spacer"></div>
+
+    <div class="row">
+
+      <div class="medium-6 small-12 columns">
+        <img src="images/explore/Uncharted_Models_Balsamini_StudioFolder_01.jpg">
+    
+      
+      </div>
+      <div class="medium-6 small-12 columns noMobile">
+        <img src="images/explore/Uncharted_Models_Balsamini_StudioFolder_07.jpg">
+
+      
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="large-10 large-offset-1 columns">
+        <p class="explore-text excerpt noMobile">By keeping a fixed view on a framed portion of territory (the Svalbard archipelago on the left, the San Francisco Bay Area on the right), and zooming away from the Earth’s surface up to an altitude of 80 km, these three-dimensional projections cuts through the sky of contemporary cartographic databases, revealing how different image sources are combined into a global mosaic—a scattered view divergent from the seamless satellite view usually rendered on screen (data source: <a target="_blank" href="https://www.google.com/maps/@40.4068429,16.4302092,12011005m/data=!3m1!1e3">Google</a>  / photo: <a target="_blank" href="http://www.mattiabalsamini.com/">Mattia Balsamini</a>)
+        </p>
+
+        <p class="explore-text excerpt noDesktop">By keeping a fixed view on a framed portion of territory of the Svalbard archipelago, and zooming away from the Earth’s surface up to an altitude of 80 km, these three-dimensional projections cuts through the sky of contemporary cartographic databases, revealing how different image sources are combined into a global mosaic—a scattered view divergent from the seamless satellite view usually rendered on screen (data source: <a target="_blank" href="https://www.google.com/maps/@40.4068429,16.4302092,12011005m/data=!3m1!1e3">Google</a>  / photo: <a target="_blank" href="http://www.mattiabalsamini.com/">Mattia Balsamini</a>)</p>
+      </div>
+
+    </div>
+
+
+
+
+   <div class="row">
+    
+      <div data class="large-10 large-offset-1 medium-12 columns">
+
+
+
+        <p class="explore-text">
+          By browsing through the imagery’s metadata on Google Earth, it was possible to understand the composition of the vertical mosaic, and how different image providers and sources are covering the Earth’s surface from different altitudes and at different resolutions. Landsat, DigitalGlobe and Spot Image (just to name a few) all have constellations of specialized satellites that provide different combinations of resolution, light spectrum and periodicity between satellite overpasses.
+
+        
+        </p>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="spacer"></div>
+      <div  class="large-12 columns no-padding "   >
+        
+        <img alt="" src="images/explore/Uncharted_After-Belonging_StudioFolder_15.jpg">
+
+      </div>
+    </div>
+
+
+
+
+    <div class="row">
+
+      <div class="spacer" id="contacts" data-magellan-target="contacts"></div>
+      <div class="large-12  medium-12 columns">
+
+        <p class="explore-text medium" > 
+
+
+        Uncharted is an ongoing research project. We’re looking for contributors, collaborators and institutions to help us developing this project further and expand its potential. <a  target="_blank" href="mailto:folder@studiofolder.it">Write us</a> if you want to get in touch. 
+
+
+
+
+        </p>
+
+        <div class="spacer"></div>
+      </div>
+    </div>
+
+
+         
+
+
+
+
+
+      <div class="row">
+    
+        <div class="large-12  medium-12 columns">
+          <p class="explore-text footnotes" id="footnotes">
+  
+          <span class="bold" id="credits" data-magellan-target="credits" >Uncharted&mdash;Footnotes to the Atlas</span>
+  
+           is an installation originally commissioned by the After Belonging Agency (Lluís Alexandre Casanovas Blanco, Ignacio González Galán, Carlos Mínguez Carrasco, Alejandra Navarrete Llopis, Marina Otero Verzier), curators of the Oslo Architecture Triennale 2016, as part of the "On Residence" exhibition at DOGA Norwegian Centre for Design and Architecture (September 8th–November 27th, 2016). 
+          </p>
+          <p class="explore-text footnotes">
+  
+          Research and design: <a target="_blank" href="http://www.studiofolder.it">Folder</a>  (Marco Ferrari, Elisa Pasqual, 
+
+          <a target="_blank" class="stealth" href="https://www.behance.net/abusi">Alessandro Busi</a>, 
+           <a target="_blank" class="stealth" href="http://aarongillett.com">Aaron Gillett</a>, 
+
+          <a target="_blank" class="stealth" href="http://pietroleoni.com">Pietro Leoni</a>,   
+
+          <a target="_blank" class="stealth" href="http://francescalucchitta.tumblr.com">Francesca Lucchitta</a>, 
+          <a target="_blank" class="stealth" href="http://www.giovannipignoni.com">Giovanni Pignoni</a>, 
+          <a target="_blank" class="stealth" href="https://www.behance.net/ma_po">Mariasilvia Poltronieri</a>) / Design and production: 
+          <a target="_blank" href="http://www.studiofolder.it">Folder</a> and  
+          <a target="_blank" href="http://www.gisto.net" >Gisto</a> (Alessandro Mason) / Special thanks to Giovanni De Francesco.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+  
+    
+
+
+
+
+
+    
+
+    <script > 
+
+      var stepSlider = document.getElementById('slider-step');
+      
+      noUiSlider.create(stepSlider, {
+        start: [ 1972 ],
+        step: 0.01,
+        behaviour: 'drag-tap-snap',
+        range: {
+          'min': [  1972 ],
+          'max': [ 2016 ]
+        }
+      });
+
+      var stepSliderValueElement = document.getElementById('slider-step-value');
+      var stepSliderImageElement = document.getElementById('slider-step-image');
+
+  stepSlider.noUiSlider.on('update', function( values, handle ) {
+
+
+
+
+
+    var stepSliderDiv = document.getElementById('slider-step');
+    var stepSliderHandle= stepSliderDiv.getElementsByClassName("noUi-handle");
+    stepSliderHandle[0].innerHTML = '<p id="slider-step-value">'+parseInt(values[handle]) +'</p>' ;
+    
+
+
+  
+
+  stepSliderImageElement.setAttribute("src", "images/texture/drawn_"+parseInt(values[handle])+".jpg");
+  var percentageslide= ((parseInt(values[handle])-1972)*100)/44 
+
+  hidehand( percentageslide);
+
+
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+
+  var src = document.getElementById("slider-step-image");
+  var touchArea = document.getElementById("touchMap");
+
+
+  touchArea.addEventListener('touchmove',function(event){
+    event = event || window.event;
+    onmove(event);
+    //console.log("move");
+  }, false);
+
+
+  touchArea.addEventListener('touchstart', function(event){
+    event = event || window.event;
+    //console.log("start");
+  onmove(event);
+      } );
+
+    var stepSliderDiv = document.getElementById('slider-step');
+    var stepSliderHandle = stepSliderDiv.getElementsByClassName("noUi-handle");
+    
+
+
+function hidehand(position){
+  $( "#hand-holder" ).animate({
+    opacity: 0,
+
+    marginLeft: position+"%",
+  }, 760,"linear");
+  }
+
+  document.addEventListener('touchend',function(){
+    
+
+  } );
+
+
+
+
+  document.addEventListener('touchend',function(){
+
+
+  } );
+
+
+
+
+  function onmove(e) {
+    var width = src.offsetWidth;
+
+
+
+
+      var i;
+      for (i=0; i < e.changedTouches.length; i++) {
+
+      
+        var barborder= (width/100)* 7.4;
+
+        stepSlider.noUiSlider.set(1972+ (e.changedTouches[i].pageX-barborder ) /( (width-barborder*2)/44) );
+
+        }
+      }
+
+
+$(window).stellar({ horizontalScrolling: false });
+
+
+</script>
+
+<script>
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var delta_down = 120;
+
+var scrollpasthead = false;
+
+
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 50);
+
+function hasScrolled() {
+  $("#menuMobile").hide();
+  var navbarHeight = $('header').outerHeight();
+  var navbarOriginalPos = $('#big-image-top').outerHeight(); 
+    var st = $(this).scrollTop();
+
+    //console.log(st);
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    if (st > navbarOriginalPos+navbarHeight*3){
+        // Scroll Down
+        var scrollpasthead = true;
+
+    } else {
+      if (st < navbarOriginalPos){
+      var scrollpasthead = false;
+    }}
+//console.log( Math.abs(lastScrollTop - st) , delta_down)
+
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight && scrollpasthead == true ) {
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up').removeClass('nav_bar');
+        $('#big-image-compenser').addClass('compensation_margin');
+
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height() && scrollpasthead == true ) {
+          $('#big-image-compenser').addClass('compensation_margin');
+          if (Math.abs(lastScrollTop - st) > delta_down) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+          }
+
+
+            $('header').removeClass('nav_bar');
+        }
+    }
+
+    if (scrollpasthead == false) {
+      $('header').removeClass('nav-down').removeClass('nav-up').addClass('nav_bar');
+      $('#big-image-compenser').removeClass('compensation_margin');
+
+    } else{
+      
+    }
+
+
+    lastScrollTop = st;
+}
+</script>
+
+<script type="text/javascript">
+
+
+  $("#menu").click(function(){
+
+    $("#menuMobile").toggle();
+});
+
+</script>
+
+<div id="preload">
+<img src="images/explore/Svalbard 03.jpg" width="1" height="1" />
+
+
+<img src="images/texture/drawn_1972.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1973.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1974.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1975.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1976.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1977.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1978.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1979.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1980.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1981.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1982.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1983.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1984.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1985.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1986.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1987.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1988.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1989.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1990.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1991.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1992.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1993.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1994.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1995.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1996.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1997.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1998.jpg" width="1" height="1" />
+<img src="images/texture/drawn_1999.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2000.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2001.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2002.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2003.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2004.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2005.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2006.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2007.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2008.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2009.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2010.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2011.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2012.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2013.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2014.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2015.jpg" width="1" height="1" />
+<img src="images/texture/drawn_2016.jpg" width="1" height="1" />
+</div>
+
+
+
+  </body>
+</html>

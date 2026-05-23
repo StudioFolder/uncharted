@@ -1,0 +1,30 @@
+
+
+@media only screen and (max-width: 39.99em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+
+  .noMobile{
+    display: none;
+  }
+
+
+.less-pad-right {
+padding-right: 0.4687rem;
+}
+.less-pad-left{
+padding-left: 0.4687rem;
+}
+
+}
+
+@media only screen and (min-width: 39.99001em) {
+
+
+  .noDesktop{
+    display: none;
+  }
+
+}
+
+
